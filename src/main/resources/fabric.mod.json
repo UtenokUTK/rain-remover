@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "rainremove",
+	"version": "${version}",
+	"name": "Rain Remove",
+	"description": "Removes rain drops and snowflakes to improve performance and visibility.",
+	"authors": [
+		"artyo"
+	],
+	"license": "CC0-1.0",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.rainremove.RainRemoveClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "rainremove.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.3",
+		"java": ">=21"
+	}
+}
